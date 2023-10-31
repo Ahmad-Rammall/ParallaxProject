@@ -1,0 +1,28 @@
+.section4{
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.centered-text {
+    font-family: 'Agbalumo',cursive; 
+    font-size: 36px; 
+}
+
+
+.fire-img{
+    /* display: flex; */
+    justify-content: flex-end;
+}
