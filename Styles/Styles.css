@@ -1,11 +1,11 @@
- 
-  .section4 {
+ /* Section 4 Css */
+ .section4 {
     height: 100vh;
     overflow-x: hidden; /* For the scale of section not to drift outside the screen size*/
     perspective: 10px;  /* defines how far the object is away from the user */
-  }
+}
   
-  header {
+header {
     position: relative; /*positioned relative to its normal position*/
     display: flex;
     justify-content: center;
@@ -13,8 +13,7 @@
     height: 100%;
     transform-style: preserve-3d; /*Specifies that child elements will preserve its 3D position*/
     z-index: -1; /*specifies the stack order of an element*/
-  }
-
+}
 
 .campfire-img {
     transform: translateZ(-5px) scale(1.5); /*applies a 2D or 3D transformation to an element*/
@@ -23,15 +22,15 @@
     width: 110%;
     object-fit: cover; /* specify how the should be resized to fit its container*/
     z-index: -1;
-  }
+}
   
   .quote {
     font-size: 7rem;
     color: white;
     text-shadow: 0 0 5px black;
-  }
+}
   
-  .over-page{
+.over-page{
     background-color: rgb(209, 209, 255);
     height: 1200px;
-  }
+}
