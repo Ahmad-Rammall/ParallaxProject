@@ -1,38 +1,37 @@
  
   .section4 {
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
+    overflow-x: hidden; /* For the scale of section not to drift outside the screen size*/
+    perspective: 10px;  /* defines how far the object is away from the user */
   }
   
   header {
-    position: relative;
+    position: relative; /*positioned relative to its normal position*/
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
+    transform-style: preserve-3d; /*Specifies that child elements will preserve its 3D position*/
+    z-index: -1; /*specifies the stack order of an element*/
   }
 
 
 .campfire-img {
-    transform: translateZ(-5px) scale(1.5);
-    position: absolute;
+    transform: translateZ(-5px) scale(1.5); /*applies a 2D or 3D transformation to an element*/
+    position: absolute; /*positioned relative to the nearest positioned ancestor*/
     height: 100%;
     width: 110%;
-    object-fit: cover;
+    object-fit: cover; /* specify how the should be resized to fit its container*/
     z-index: -1;
   }
   
-  .Quote {
+  .quote {
     font-size: 7rem;
     color: white;
-    text-shadow: 0 0 5px black;;
+    text-shadow: 0 0 5px black;
   }
   
   .over-page{
-    background-color: black;
+    background-color: rgb(209, 209, 255);
     height: 1200px;
   }
