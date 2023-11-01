@@ -20,8 +20,10 @@
     z-index: 2;
     overflow-y: auto;
     overflow-x: hidden;
-    perspective: 10px;
+    perspective: 0.625rem;
     animation: parallax 10s infinite alternate; 
+    gap: 1rem;
+    flex-grow: 1;
 }
 /* Implement a keyframe animation */
 @keyframes parallax {
@@ -34,27 +36,25 @@
 }
 /* Style for the camping images */
 .camping-images{
-    width: 280px;
-    height: 250px;
-    margin-top: 25px;
-    margin-left: 14px;
-    border-radius: 10px;
+    width: 17.5rem;
+    height: 15.625rem;
+    margin-top: 1.5625rem;
+    margin-left: 0.875rem;
+    border-radius: 0.625rem;
     transform: translateY(10%);
+    
 }
 /* Style for the images captions */
 .caption-style{
-    width: 280px; 
-    height: 200px; 
-    margin-top: 25px;
-    margin-left: 17px;
-    margin-right: 20px;
+    width: 17.5rem; 
+    height: 12.5rem; 
+    margin-top: 2.5rem;
+    margin-left: 1.0625rem;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: rgb(240, 239, 239);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     text-align: center;
+    
 
 }
 /* Style for the header of the caption */
@@ -65,5 +65,5 @@
 }
 /* Style for the caption paragraph */
 .paragraph-sizing{
-    padding: 18px;
+    padding: 1.125rem;
 }
