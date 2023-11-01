@@ -1,42 +1,38 @@
 /* Section 3 */
 
 .slider-container{
-   z-index: 3;
-   background-image: url("../Assets/Images/Background.jpg");
-   background-size: cover; 
-   background-position: center;    
-}
-
-
-.slider-wrapper{
-    position: relative;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.slider{
-    display: flex;
-    aspect-ratio: 16/9;
-    height: 100%;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; 
-}
-
-.slides{
-    flex: 1 0 100%;
-    justify-content: center; 
-    flex-direction: column;
-    display: flex; 
-    scroll-snap-align: start;
-    color:rgb(255, 255, 255);
-    animation:slide 20s infinite;   
-
-} 
-
-@keyframes slide {
+    z-index: 3;  /* Place whole page above Section 2*/
+    background-image: url("../Assets/Images/Background.jpg"); 
+    background-size: cover;  
+    background-position: center;  
+ }
+ 
+ .slider-wrapper{
+     position: relative;  /* This sets the positioning context for child elements within the wrapper. */
+     height: 70%;  
+     display: flex;  
+     justify-content: center;  
+ }
+ 
+ .slider{
+     display: flex;  
+     aspect-ratio: 16/9;  
+     height: 100%;  
+     overflow-x: hidden;  /* Hides horizontal overflow content. */
+     scroll-snap-type: x mandatory;  /* Configures the behavior of horizontal scrolling within the slider. */
+     scroll-behavior: smooth;  /* Defines smooth scrolling behavior. */
+ }
+ 
+ .slides{
+     flex: 1 0 100%;  /* flex grow, shrink, basis */
+     justify-content: center;  
+     flex-direction: column;  
+     display: flex; 
+     scroll-snap-align: start;  /* Defines how the slides should align within the slider. */
+     color:rgb(255, 255, 255);  
+     animation:slide 20s infinite;  /* Applies the 'slide' animation to the slides. */
+ }
+@keyframes slide {  /* Configure slide time in terms of percent*/
     0% {
         transform: translateX(0);
     }
@@ -87,6 +83,7 @@
     text-align: center;
     font-size: 30px; 
     margin-top: 5px;
+    font-family: 'Playfair Display' , serif;
 }
 
 .name {
@@ -96,24 +93,24 @@
     margin-top: 5rem;
 }
 
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute; 
-    bottom: 1.25rem;
-    left:50%;
-    transform: translateX(-50%);
-    z-index: 1;
+.slider-nav {
+    display: flex; 
+    column-gap: 1rem;  
+    position: absolute;  /* Positions the element absolutely within its closest positioned ancestor. */
+    bottom: 1.25rem;  
+    left: 50%;  
+    transform: translateX(-50%);  /* Translates the element horizontally by 50% of its own width, effectively centering it horizontally. */
+    z-index: 1;  /* Sets the stacking order for the element. */
 }
 
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-    font-size: 0;
+.slider-nav a {
+    width: 0.5rem;  
+    height: 0.5rem;  
+    border-radius: 50%;  
+    background-color: #fff;  
+    opacity: 0.65;  /* Sets the initial opacity (transparency) of the links to 75%. */
+    transition: opacity ease 200ms;  /* Defines a smooth transition effect for the opacity property over 200 milliseconds. */
+    font-size: 0; 
 }
 
 /* Section 3 */
