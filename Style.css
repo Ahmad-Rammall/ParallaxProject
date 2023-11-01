@@ -1,3 +1,6 @@
+/* ------ SECTION-1 STYLE ------ */
+
+/* Removing default paddings and margins */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-y: hidden;
   background-color: #000;
 }
 
@@ -13,32 +17,35 @@ body {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 11px;
+  perspective: 11px; /*Adding depth effect based on a 3D perspective of 11 pixels*/
 }
 
-.img-container {
+.header-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  transform-style: preserve-3d;
-  z-index: -100;
+  transform-style: preserve-3d; /*indicates that child elements inside the container should be rendered in a true 3D space*/
+  z-index: -1;
 }
 
-.back-img {
-  transform: translateZ(-10px) scale(2);
-}
-
-.front-img {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.img-container img {
+/* Designing each <img> inside .img-container class */
+.header-container img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* Moving back-img 10 pixels along the negative z-axis Then scaling it to be twice its original size */
+.back-img {
+  transform: translateZ(-10px) scale(2);
+}
+
+/* Moving front-img 5 pixels along the negative z-axis Then scaling it to be 1.5 its original size */
+.front-img {
+  transform: translateZ(-5px) scale(1.5);
 }
 
 .title {
@@ -56,7 +63,8 @@ section {
   color: white;
 }
 
-.img-container::after {
+/* Adding Pseudo-Element to make gradient effect */
+.header-container::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -69,5 +77,3 @@ section {
     #000 100%
   );
 }
-
-
