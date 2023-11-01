@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+.section-5{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99; /*Could be 5 but i set it to 99 since it is the last page and to be on the safe side*/
+}
+
+.flex-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.side{
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+
+.text{
+    color: white;
+}
+
+.contact-info{
+    font-size: 16px;
+}
+
+.contact-header{
+    font-size: 40px;
+    padding: 10;
+}
+
+.fa-square-facebook{
+    display: inline-block;
+    margin-left: 10;
+    color: white;
+}
+
+.link:hover .addText {
+    display: inline;
+    color: red;
+    transform: translate(-10px, 00%);
+}
