@@ -2,8 +2,7 @@
    z-index: 3;
    background-image: url("../Assets/Images/Background.jpg");
    background-size: cover; 
-   background-position: center; 
-   
+   background-position: center;    
 }
 
 
@@ -21,9 +20,9 @@
     aspect-ratio: 16/9;
     height: 100%;
     overflow-x:auto;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
-
-    
+    scroll-behavior: smooth; 
 }
 
 .slides{
@@ -32,8 +31,34 @@
     flex-direction: column;
     display: flex; 
     scroll-snap-align: start;
-    color:rgb(255, 255, 255)
+    color:rgb(255, 255, 255);
+    animation:slide 20s infinite;   
+
 } 
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    15% {
+        transform: translateX(0);
+    }
+    20%,35%{
+        transform: translateX(-100%);
+    }
+    40%,55% {
+        transform: translateX(-200%);
+    }
+    60%,75% {
+        transform: translateX(-300%);
+    }
+    80%,95% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 .profile-container {
     display: flex;
@@ -70,3 +95,24 @@
     font-weight: bold;
     margin-top: 5rem;
 }
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute; 
+    bottom: 1.25rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    font-size: 0;
+}
+
