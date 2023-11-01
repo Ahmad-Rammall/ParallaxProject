@@ -1,6 +1,6 @@
  /* Section 4 Css */
  .section4 {
-    height: 100vh;
+    height: 90vh;
     overflow-x: hidden; /* For the scale of section not to drift outside the screen size*/
     perspective: 10px;  /* defines how far the object is away from the user */
 }
@@ -25,7 +25,7 @@ header {
 }
   
 .quote {
-    font-size: 7rem;
+    font-size: 9rem;
     color: white;
     text-shadow: 0 0 5px black;
 }
