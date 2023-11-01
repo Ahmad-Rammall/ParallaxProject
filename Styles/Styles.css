@@ -2,7 +2,7 @@
  .section4 {
     height: 90vh;
     overflow-x: hidden; /* For the scale of section not to drift outside the screen size*/
-    perspective: 10px;  /* defines how far the object is away from the user */
+    perspective: 12px;  /* defines how far the object is away from the user */
 }
   
 header {
@@ -35,3 +35,4 @@ header {
     height: 1200px;
 }
 
+/* End of section 4 css */
