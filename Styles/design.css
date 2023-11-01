@@ -1,9 +1,9 @@
 .slider-container{
    z-index: 3;
-   background-image: url("https://cdn.pixabay.com/photo/2016/11/29/04/17/bonfire-1867275_640.jpg");
-   background-size: cover; /* Ensures the image covers the entire container */
-   background-position: center; /* Centers the image within the container */
-   height: 100vh;
+   background-image: url("../Assets/Images/Background.jpg");
+   background-size: cover; 
+   background-position: center; 
+   
 }
 
 
@@ -11,6 +11,8 @@
     position: relative;
     margin: 0;
     height: 70%;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -20,28 +22,51 @@
     height: 100%;
     overflow-x:auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 0.5rem;
+
+    
 }
 
 .slides{
     flex: 1 0 100%;
+    justify-content: center; 
+    flex-direction: column;
+    display: flex; 
     scroll-snap-align: start;
-    object-fit: cover;
-    background-color: rgba(10, 72, 51, 0);
-    opacity:1;
     color:rgb(255, 255, 255)
 } 
 
-h1{
-    height: 100%;
-    flex: 1 0 100%;
-    object-fit: cover;
-    display: flex; /* Add display: flex to center the content vertically and horizontally */
+.profile-container {
+    display: flex;
     align-items: center;
-    padding-top: 20%;
-    justify-content: center; /* Center the content horizontally */
-    opacity: 1; /* Adjust the opacity as desired */
-    color: rgb(255, 255, 255); /* Change the text color to white or your preferred color */
-    text-align: center; /* Center the text horizontally within the slide */
+    justify-content: center;
+    height: 40%; 
+}
+
+.profile {
+    border-radius: 50%; 
+    width:200px;
+    height:200px
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; 
+    padding: 10px;
+}
+
+.review {
+    width: 70%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px; 
+    margin-top: 5px;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    font-size: 25px; 
+    font-weight: bold;
+    margin-top: 5rem;
 }
