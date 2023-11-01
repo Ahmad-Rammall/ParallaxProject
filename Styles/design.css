@@ -8,7 +8,6 @@
 
 .slider-wrapper{
     position: relative;
-    margin: 0;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -19,8 +18,7 @@
     display: flex;
     aspect-ratio: 16/9;
     height: 100%;
-    overflow-x:auto;
-    overflow: hidden;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth; 
 }
