@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  overflow-y: hidden;
+
   background-color: #000;
 }
 
@@ -141,37 +141,32 @@ align-self: center;
   padding: 1.125rem;
 }
 
- /* Section 4 Css */
- .section4 {
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden; /* For the scale of section not to drift outside the screen size*/
-  perspective: 12px;  /* defines how far the object is away from the user */
-}
 
-.wrap {
-  position: relative; /*positioned relative to its normal position*/
+ /* Section 4 Css */
+
+
+.section4 {
+  background-image: url('../Assets/Images/mountain.png');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  transform-style: preserve-3d; /*Specifies that child elements will preserve its 3D position*/
+
 }
 
-.campfire-img {
-  transform: translateY(10%); /*applies a 2D or 3D transformation to an element*/
-  position: absolute; /*positioned relative to the nearest positioned ancestor*/
-  height: 100%;
-  width: 100%;
-  object-fit: cover; /* specify how the should be resized to fit its container*/
-}
-
-.quote {
-  font-size: 5rem;
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-shadow: 0 0 5px black;
+  text-align: center;
 }
 
-
+.centered-text {
+  font-family: 'Agbalumo',cursive; 
+  font-size: 36px; 
+}
 
 /* End of section 4 css */
