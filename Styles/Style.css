@@ -2,17 +2,17 @@
 
 /* Removing default paddings and margins */
 
-
 body {
   margin: 0;
   background-color: #000;
 }
 
-.section1-wrapper {
+.global-wrapper {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 11px; /*Adding depth effect based on a 3D perspective of 11 pixels*/
+  perspective: 11px;
+  /*Adding depth effect based on a 3D perspective of 11 pixels*/
 }
 
 .header-container {
@@ -21,7 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  transform-style: preserve-3d; /*indicates that child elements inside the container should be rendered in a true 3D space*/
+  transform-style: preserve-3d;
+  /*indicates that child elements inside the container should be rendered in a true 3D space*/
   z-index: -1;
 }
 
@@ -75,10 +76,7 @@ section {
 
 /* ------ SECTION-1 End STYLE ------ */
 
-
-
 /* ------ SECTION-2 STYLE ------ */
-
 
 /* Main container Styling */
 .pic-container {
@@ -102,19 +100,19 @@ section {
 }
 
 /* Style for the camping images */
-.camping-images{
+.camping-images {
   width: 17.5rem;
   height: 15.625rem;
   margin-top: 1.5625rem;
   margin-left: 0.875rem;
   border-radius: 0.625rem;
   transform: translateY(10%);
-  
 }
+
 /* Style for the images captions */
-.caption-style{
-  width: 17.5rem; 
-  height: 12.5rem; 
+.caption-style {
+  width: 17.5rem;
+  height: 12.5rem;
   margin-top: 2.5rem;
   margin-left: 1.0625rem;
   border-radius: 10px;
@@ -126,36 +124,32 @@ section {
     #030303 100%
   );
   text-align: center;
-  
-
 }
+
 /* Style for the header of the caption */
-.caption-style h3{
-text-align: center;
-align-self: center;
-
+.caption-style h3 {
+  text-align: center;
+  align-self: center;
 }
+
 /* Style for the caption paragraph */
-.paragraph-sizing{
+.paragraph-sizing {
   padding: 1.125rem;
 }
 
-
- /* Section 4 Css */
-
+/* Section 4 Css */
 
 .section4 {
-  background-image: url('../Assets/Images/mountain.png');
-  background-attachment: fixed;
+  background-image: url("../Assets/Images/mountain.png");
+   background-attachment: fixed; /*set the background image to don't scroll*/
   background-size: cover;
   height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.wrap{
+.wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,8 +158,8 @@ align-self: center;
 }
 
 .centered-text {
-  font-family: 'Agbalumo',cursive; 
-  font-size: 36px; 
+  font-family: "Agbalumo", cursive;
+  font-size: 36px;
 }
 
 /* End of section 4 css */

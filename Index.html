@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Styles/reset.css">
+    <!-- Linking style sheets -->
+    <link rel="stylesheet" href="./Styles/reset.css" />
     <link rel="stylesheet" href="/Styles/Style.css" />
-    <link rel="stylesheet" href="/Styles/design.css">
-    <link rel="stylesheet" href="/Styles/Section5.css">
-    <script src="https://kit.fontawesome.com/60b8342c41.js" crossorigin="anonymous"></script>
-    
-    <title>Document</title>
+    <link rel="stylesheet" href="/Styles/design.css" />
+    <link rel="stylesheet" href="/Styles/Section5.css" />
+    <!-- Icons Script for section 5 -->
+    <script
+      src="https://kit.fontawesome.com/60b8342c41.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Parallax Project</title>
   </head>
+
   <body>
-    <div class="section1-wrapper">
+    <div class="global-wrapper">
       <div class="header-container">
         <h1 class="title">Embrace Nature's Beauty.</h1>
         <img src="Assets/Images/first.jpg" class="back-img" />
@@ -85,121 +91,135 @@
           </div>
         </div>
       </section>
-     ><!-- Section 3 -->
-      
-    <!-- Slider Container -->
-    <div class="slider-container page"> 
+      ><!-- Section 3 -->
 
+      <!-- Slider Container -->
+      <div class="slider-container page">
         <div class="slider-wrapper">
-
-            <div class="slider">
-                <div class="slides" id="slide-1">
-                    <div class="profile-container">
-                        <img class="profile" src="Assets/Images/Ahmad.jpg">
-                    </div>
-                    <div class="review-container">
-                        <p class="review">"The outdoor adventure experts provided an unforgettable wilderness experience."</p>
-                        <p class="name">~ Ahmad</p>
-                    </div>
-                </div>
-                <div class="slides" id="slide-2">
-                    <div class="profile-container">
-                        <img class="profile" src="Assets/Images/Chahine.jpg">
-                    </div>
-                    <div class="review-container">
-                        <p class="review">"I'm not usually an outdoor person, but this team made me fall in love with nature and stargazing."</p>
-                        <p class="name">~ Chahine</p>
-                    </div>
-                </div>
-                <div class="slides" id="slide-3">
-                    <div class="profile-container">
-                        <img class="profile" src="Assets/Images/Johnny.jpg">
-                    </div>
-                    <div class="review-container">
-                        <p class="review">"I never thought I'd enjoy nature trips, but their attention to detail and comfort made it a five-star experience."</p>
-                        <p class="name">~ Johnny</p>
-                    </div>
-                </div>
-                <div class="slides" id="slide-4">
-                    <div class="profile-container">
-                        <img class="profile" src="Assets/Images/mohammad.jpg">
-                    </div>
-                    <div class="review-container">
-                        <p class="review">"The breathtaking locations and well-organized trips make this team the go-to choice for outdoor enthusiasts."</p>
-                        <p class="name">~ Mohammad</p>
-                    </div>
-                </div>
-                <div class="slides" id="slide-5">
-                    <div class="profile-container">
-                        <img class="profile" src="Assets/Images/Ali.jpg">
-                    </div>
-                    <div class="review-container">
-                        <p class="review">"I can't wait to explore the wilderness with this group again - their trips are like stepping into a nature lover's dream."</p>
-                        <p class="name">~ Ali</p>
-                    </div>
-                </div>              
+          <div class="slider">
+            <div class="slides" id="slide-1">
+              <div class="profile-container">
+                <img class="profile" src="Assets/Images/Ahmad.jpg" />
+              </div>
+              <div class="review-container">
+                <p class="review">
+                  "The outdoor adventure experts provided an unforgettable
+                  wilderness experience."
+                </p>
+                <p class="name">~ Ahmad</p>
+              </div>
             </div>
-
-            <div class="slider-nav">
-
-                <a href="#slide-1">1</a>
-                <a href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">4</a>
-
+            <div class="slides" id="slide-2">
+              <div class="profile-container">
+                <img class="profile" src="Assets/Images/Chahine.jpg" />
+              </div>
+              <div class="review-container">
+                <p class="review">
+                  "I'm not usually an outdoor person, but this team made me fall
+                  in love with nature and stargazing."
+                </p>
+                <p class="name">~ Chahine</p>
+              </div>
             </div>
+            <div class="slides" id="slide-3">
+              <div class="profile-container">
+                <img class="profile" src="Assets/Images/Johnny.jpg" />
+              </div>
+              <div class="review-container">
+                <p class="review">
+                  "I never thought I'd enjoy nature trips, but their attention
+                  to detail and comfort made it a five-star experience."
+                </p>
+                <p class="name">~ Johnny</p>
+              </div>
+            </div>
+            <div class="slides" id="slide-4">
+              <div class="profile-container">
+                <img class="profile" src="Assets/Images/mohammad.jpg" />
+              </div>
+              <div class="review-container">
+                <p class="review">
+                  "The breathtaking locations and well-organized trips make this
+                  team the go-to choice for outdoor enthusiasts."
+                </p>
+                <p class="name">~ Mohammad</p>
+              </div>
+            </div>
+            <div class="slides" id="slide-5">
+              <div class="profile-container">
+                <img class="profile" src="Assets/Images/Ali.jpg" />
+              </div>
+              <div class="review-container">
+                <p class="review">
+                  "I can't wait to explore the wilderness with this group again
+                  - their trips are like stepping into a nature lover's dream."
+                </p>
+                <p class="name">~ Ali</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="slider-nav">
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+            <a href="#slide-5">4</a>
+          </div>
         </div>
-      
-    </div>
+      </div>
 
-<!-- Section 3 -->
- <!-- section 4 Start -->
+      <!-- Section 3 -->
+      <!-- section 4 Start -->
 
-  <section class="section4">
-    <div class="wrap">
-        <h1 class="centered-text">“Life is better by the camp fire”</h1>
-    </div>
-</section>
-
-<!-- Sectio 5 start -->
-<div class="section-5 flex-container"> 
-    
-
-    <div class="flex-container left side ">
-    <div class="flex-container box">
-        <h1 class="text contact-header">Contact Us </h1> 
-        <p class="link text contact-info"><a href="https://facebook.com/" target="_blank">
-            <span class="fa-brands fa-square-facebook fa-3x"></span>
-            <span class="addText"> Facebook</span></a></p>
-
-        <p class="link text contact-info "><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
-            <span class="fa-brands fa-square-instagram fa-3x"></span> 
-            <span class="addText"> Instagram</span></a></p>
-
-        <p class="link text contact-info"><span class="fa-solid fa-phone fa-2x"></span> <span class="addText"> 81 371407</span></p>
-    </div>
+      <section class="section4">
+        <div class="wrap">
+          <h1 class="centered-text">“Life is better by the camp fire”</h1>
         </div>
-    <div class="flex-container right side">
-        <div class="flex-container box">
-        <h1 class="text contact-header">Address</h1>
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.4665585011817!2d35.766746175521455!3d34.15998727311666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f57312005bcb3%3A0x86165a8bf2fb25bd!2sLehfed%20Country%20Club!5e0!3m2!1sen!2slb!4v1698791790439!5m2!1sen!2slb" 
-        class = "map"
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-     </div>
-    </div>
+      </section>
+      <!-- section 4 End -->
+      <!-- Sectio 5 start -->
+      <div class="section-5 flex-container">
+        <div class="flex-container left side">
+          <div class="flex-container box">
+            <h1 class="text contact-header">Contact Us</h1>
+            <p class="link text contact-info">
+              <a href="https://facebook.com/" target="_blank">
+                <span class="fa-brands fa-square-facebook fa-3x"></span>
+                <span class="addText"> Facebook</span></a
+              >
+            </p>
 
-   </div> 
-  </div>
-</body>
+            <p class="link text contact-info">
+              <a
+                href="https://www.instagram.com/accounts/login/?hl=en"
+                target="_blank"
+              >
+                <span class="fa-brands fa-square-instagram fa-3x"></span>
+                <span class="addText"> Instagram</span></a
+              >
+            </p>
+
+            <p class="link text contact-info">
+              <span class="fa-solid fa-phone fa-2x"></span>
+              <span class="addText"> 81 371407</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex-container right side">
+          <div class="flex-container box">
+            <h1 class="text contact-header">Address</h1>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.4665585011817!2d35.766746175521455!3d34.15998727311666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f57312005bcb3%3A0x86165a8bf2fb25bd!2sLehfed%20Country%20Club!5e0!3m2!1sen!2slb!4v1698791790439!5m2!1sen!2slb"
+              class="map"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-  
- 
-
-         
-

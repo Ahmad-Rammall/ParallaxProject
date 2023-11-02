@@ -1,77 +1,79 @@
-
-.section-5{
-    background-color: rgb(42, 39, 39);
-    width: 100vw;
-    height: 100vh;
-    z-index: 99; /*Could be 5 but i set it to 99 since it is the last page and to be on the safe side*/
+.section-5 {
+  background-color: rgb(42, 39, 39);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  /*Could be 5 but i set it to 99 since it is the last page and to be on the safe side*/
 }
 
-.flex-container{
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.side{
-    height: 100%;
-    width: 50%;
-    flex-direction: column;
+.side {
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
 }
 
-.text{
-    color: white;
-    font: 1em sans-serif;
+.text {
+  color: white;
+  font: 1em sans-serif;
 }
 
-.contact-info{
-    font-size: 16px;
-    height: 10%;
-}   
+.contact-info {
+  font-size: 16px;
+  height: 10%;
+}
 
-.contact-header{
-    font-size: 40px;
+.contact-header {
+  font-size: 40px;
 }
-.fa-brands{
-    color: white;
-    width: 50px;
-    height: 50px;
+
+.fa-brands {
+  color: white;
+  width: 50px;
+  height: 50px;
 }
-.fa-square-facebook{
-    display: inline-block;
-    margin-left: 10;
+
+.fa-square-facebook {
+  display: inline-block;
+  margin-left: 10;
 }
 
 .addText {
-    display: none;
-    margin-left: 10px;
-    text-decoration: none;
+  display: none;
+  margin-left: 10px;
+  text-decoration: none;
 }
+
 .left {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
+
 .link:hover .addText {
-    display: inline;
-    font-size: large;
-    text-decoration: none;
-    color: rgb(231, 234, 241);
-    transform: translateX(20px);  
+  display: inline;
+  font-size: large;
+  text-decoration: none;
+  color: rgb(231, 234, 241);
+  transform: translateX(20px);
 }
 
-
-
-.box{
-    flex-direction: column;
-    width: 60%;
-    height: 60%;
-    padding: 100;
-    background-color: rgba(100, 100, 100,0.2);
-    border-radius: 15px;
+.box {
+  flex-direction: column;
+  width: 60%;
+  height: 60%;
+  padding: 100;
+  background-color: rgba(100, 100, 100, 0.2);
+  border-radius: 15px;
 }
+
 .map {
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    border: 0;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 0;
 }
-
